@@ -1,0 +1,10 @@
+.Footer {
+    position: fixed;
+    bottom: 0;
+    background-color: azure;
+    width: 100%;
+}
+.Footer p {
+    margin: 0;
+    font-size: 14px;
+}
