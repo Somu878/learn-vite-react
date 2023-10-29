@@ -1,13 +1,11 @@
 import './App.css';
-import CatFacts from "./react APIs/api"
-import Button1 from './css modules/button1';
+import UseEffect from './react hooks/UseEffect';
 
 function App() {
 
   return (
     <>
-    <CatFacts/>
-    <Button1/>
+    <UseEffect/>
     </>
   );
 }
