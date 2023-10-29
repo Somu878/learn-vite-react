@@ -1,13 +1,13 @@
 import './App.css';
 import CatFacts from "./react APIs/api"
-import LifecycleExample from './lifecycles/lifecycle';
+import Button1 from './css modules/button1';
 
 function App() {
 
   return (
     <>
     <CatFacts/>
-    <LifecycleExample/>
+    <Button1/>
     </>
   );
 }
