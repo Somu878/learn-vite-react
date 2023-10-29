@@ -1,12 +1,14 @@
 import './App.css';
-import UseEffect from './react hooks/UseEffect';
+import React from 'react';
+import Child from './react hooks/useContext/child';
+
+export const UserContext = React.createContext(); // Export context
 
 function App() {
-
   return (
-    <>
-    <UseEffect/>
-    </>
+    <UserContext.Provider value={{ text: 'It worked' }}> {/* Provide the context value */}
+      <Child />
+    </UserContext.Provider>
   );
 }
 

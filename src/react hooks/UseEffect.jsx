@@ -9,6 +9,7 @@ export default function UseEffect() {
     }
     useEffect(()=>{
         handle();
+    //when we leave the secondary variable the page could run infinite number of times
     },[])//Here without dependency array the page could run infinte times
     // In dependency array we can place some props or state variables to change the particular value
   return (
