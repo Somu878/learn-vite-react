@@ -1,14 +1,13 @@
-import './App.css';
 import React from 'react';
-import Child from './react hooks/useContext/child';
-
-export const UserContext = React.createContext(); // Export context
+import { BrowserRouter } from 'react-router-dom'; 
+import MainRouter from './react Router/mainRouter';
+import './App.css';
 
 function App() {
   return (
-    <UserContext.Provider value={{ text: 'It worked' }}> {/* Provide the context value */}
-      <Child />
-    </UserContext.Provider>
+    <BrowserRouter>
+      <MainRouter />
+    </BrowserRouter>
   );
 }
 
