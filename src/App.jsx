@@ -1,13 +1,10 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom'; 
-import MainRouter from './react Router/mainRouter';
+import ReduxExp from './redux/reduxExp';
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <MainRouter />
-    </BrowserRouter>
+    <ReduxExp/>
   );
 }
 
