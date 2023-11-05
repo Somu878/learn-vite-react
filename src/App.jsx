@@ -1,10 +1,14 @@
-import React from 'react';
-import ReduxExp from './redux/reduxExp';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import Navbar from "./navbar/Navbar";
+import Shop from "./pages/shop/shop";
 function App() {
   return (
-    <ReduxExp/>
+    <>
+    
+   <Navbar/>
+    <Shop/>
+    </>
   );
 }
 
