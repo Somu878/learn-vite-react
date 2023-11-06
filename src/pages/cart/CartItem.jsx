@@ -15,10 +15,10 @@ function CartItem(props) {
         </p>
         <p id="d">{description}</p>
         <p>{price}💲</p>
-        <button onClick={()=>{
+        <button className="addToCartBttn" onClick={()=>{
             dispatch(removeItem(id))
             console.log(CartItems);
-        }} >Remove</button>
+        }} >Remove from cart</button>
       </div>
     </>
   );

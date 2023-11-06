@@ -4,7 +4,7 @@ import './navbar.css'
 function Navbar() {
   const no = useSelector((state)=>state.cart.cartItems.length)
   return (
-    <navbar>
+    <div>
       <nav className='navbar' >
         <div className='logo'>Shopeezy🛒</div>
         <p className='links' >
@@ -13,7 +13,7 @@ function Navbar() {
     
         </p>
       </nav>
-    </navbar>
+    </div>
   )
 }
 
