@@ -8,17 +8,27 @@ export const CartApp = createSlice({
     },
     reducers: {
         addItem: (state, action) => {
-            state.cartItems.push(action.payload);
-            state.totalCost+=action.payload.price
-        },
-        removeItem: (state, action) => {
-            const index = action.payload;
-            if (index >= 0 && index < state.cartItems.length) {
-                state.cartItems.splice(index, 1);
+            const newItem = action.payload;
+            const existingItem = state.cartItems.find(item => item.id === newItem.id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+                state.totalCost += existingItem.price;
+            } else {
+                state.cartItems.push(newItem);
+                state.totalCost += newItem.price;
             }
         },
+        removeItem: (state, action) => {
+            const indexToRemove = action.payload;
+
+            state.cartItems.splice(indexToRemove, 1);
+            
+
+            }
+
+        },
     },
-});
+);
 
 export const { addItem, removeItem } = CartApp.actions;
 export default CartApp.reducer;
